@@ -1,0 +1,276 @@
+form.umzug-form .selecter-holder {
+  position: relative;
+  float: right;
+}
+form.umzug-form .selecter-holder .selecter {
+  border: 1px solid #E0E0E0;
+  padding: 0.7142em;
+  background-color: #ffffff;
+  width: 95px;
+  line-height: 20px;
+  position: relative;
+  cursor: pointer;
+  min-height: 42px;
+}
+form.umzug-form .selecter-holder .selecter:after {
+  content: "";
+  position: absolute;
+  top: 1.3em;
+  right: 7px;
+  border-width: 7px;
+  border-color: #343434 transparent transparent;
+  border-style: solid;
+  width: 0;
+  height: 0;
+}
+form.umzug-form .selecter-holder .selecter:hover {
+  color: #FF7500;
+}
+form.umzug-form .selecter-holder .selecter:hover::after {
+  border-color: #FF7500 transparent transparent;
+}
+form.umzug-form .selecter-holder .selecter.open {
+  padding-bottom: 10px;
+  border-color: #969696;
+}
+form.umzug-form .selecter-holder .selecter.error {
+  border-color: #b80000;
+}
+form.umzug-form .selecter-holder .select-options {
+  display: none;
+  border: 1px solid #969696;
+  border-top: none;
+  padding: 2px 0 2px 2px;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  background-color: #ffffff;
+}
+form.umzug-form .selecter-holder .select-options p {
+  padding: 0 0 3px 6px;
+  cursor: pointer;
+}
+form.umzug-form .selecter-holder .select-options p:hover {
+  color: #FF7500;
+}
+form.umzug-form .selecter-holder .select-options p.selected {
+  color: #FF7500;
+}
+form.umzug-form .selecter-holder.error .selecter {
+  background-color: #FFDDDC;
+  border-color: #B80000;
+}
+form.umzug-form label.radio {
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  left: 21px;
+}
+form.umzug-form label.radio i {
+  font-size: 21px;
+  color: #E0E0E0;
+  position: absolute;
+  left: -25px;
+  top: 0px;
+}
+form.umzug-form label.radio.active i {
+  color: #969696;
+}
+form.umzug-form label.radio .error {
+  color: #b80000;
+}
+form.umzug-form a.specialradio.button {
+  line-height: 2.5em;
+  border: 1px solid #e0e0e0;
+  background-color: #fff;
+  color: #747474;
+  border-radius: 0;
+  padding: 0px 15px;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  user-select: none;
+}
+form.umzug-form a.specialradio.button:hover {
+  background-color: #f6f6f6;
+}
+form.umzug-form a.specialradio.button.active {
+  background-color: #747474!important;
+  border-color: #747474!important;
+  color: #fff!important;
+}
+form.umzug-form label.checkbox {
+  position: relative;
+  cursor: pointer;
+}
+form.umzug-form label.checkbox i {
+  font-size: 14px;
+  position: relative;
+  top: 5px;
+  margin-right: 6px;
+}
+form.umzug-form label.checkbox i:before {
+  content: "";
+  display: inline-block;
+  border: 1px solid #E0E0E0;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  cursor: pointer;
+}
+form.umzug-form label.checkbox.long-text i {
+  display: block;
+  float: left;
+  margin-right: 12px;
+}
+form.umzug-form label.checkbox.grey-background i:before {
+  border-color: #969696;
+}
+form.umzug-form label.checkbox.selected i:before {
+  border-color: #969696;
+}
+form.umzug-form label.checkbox.selected i:after {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  font-size-adjust: none;
+  font-stretch: normal;
+  font-feature-settings: normal;
+  font-language-override: normal;
+  font-kerning: auto;
+  font-synthesis: weight style;
+  font-variant: normal;
+  font-size: inherit;
+  text-rendering: auto;
+  content: "\f00c";
+  position: absolute;
+  z-index: 10;
+  top: 5px;
+  right: 3px;
+  cursor: pointer;
+}
+form.umzug-form label.checkbox.long-label i {
+  display: block;
+  height: 150px;
+  float: left;
+  margin-right: 15px;
+}
+form.umzug-form label.checkbox.long-label.small-height i {
+  height: 80px;
+}
+form.umzug-form label.checkbox.error {
+  color: #b80000 !important;
+}
+form.umzug-form textarea {
+  resize: none;
+}
+form.umzug-form .is24list-check.list-check > li:before {
+  color: #ff7500;
+}
+.submitted .ng-pristine.ng-invalid,
+.submitted .ng-dirty.ng-invalid {
+  border-color: #b80000 !important;
+  color: #444444;
+}
+.submitted .ng-pristine.ng-invalid.input-text,
+.submitted .ng-dirty.ng-invalid.input-text {
+  background-color: #ffdddc;
+}
+.submitted .ng-pristine.ng-invalid.specialradio,
+.submitted .ng-dirty.ng-invalid.specialradio {
+  color: #b80000;
+  font-weight: bold;
+}
+.submitted .ng-pristine.ng-invalid.checkbox i:before,
+.submitted .ng-dirty.ng-invalid.checkbox i:before {
+  border-color: #b80000 !important;
+  background-color: #ffdddc;
+}
+.submitted .ng-pristine.ng-invalid .selecter,
+.submitted .ng-dirty.ng-invalid .selecter {
+  border-color: #b80000 !important;
+}
+.mobile-address-form-not-in-bg {
+  display: none;
+}
+#close-lightbox {
+  display: none;
+}
+.pac-container {
+  border: 1px solid #aaaaaa;
+  box-shadow: none;
+  border-radius: 0;
+}
+.pac-container .pac-item {
+  border-top: none;
+  font-size: 12px;
+}
+.pac-container .pac-item .pac-item-query,
+.pac-container .pac-item span {
+  color: #343434;
+}
+.pac-container .pac-item .pac-icon {
+  background-image: none;
+  margin-right: 4px;
+  width: auto;
+}
+.pac-container:after {
+  height: 0px;
+  background: none;
+}
+@media screen and (min-width: 669px) {
+  form.umzug-form label.radio[name="selectedService"] {
+    margin-left: 28px;
+  }
+  .margin-left-xxl-lap {
+    margin-left: 32px !important;
+  }
+}
+@media screen and (min-width: 894px) {
+  #lightbox-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 6666;
+  }
+  #lightbox-holder {
+    position: relative;
+  }
+  #lightbox-holder #lightbox {
+    position: absolute;
+    left: 17%;
+    top: -700px;
+    z-index: 9998;
+    background: #ffffff;
+    width: 752px;
+  }
+  #lightbox-holder #lightbox .status-message {
+    position: relative;
+    border: 1px solid #edf8dd;
+  }
+  #lightbox-holder #lightbox i#close-lightbox {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 7px;
+    cursor: pointer;
+  }
+  #lightbox-holder #lightbox.set-other-layer-in-foreground,
+  #lightbox-holder #lightbox.set-other-layer-in-foreground * {
+    display: none;
+  }
+  #close-lightbox {
+    display: block;
+  }
+  .mobile-address-form-not-in-bg {
+    display: block;
+  }
+}
